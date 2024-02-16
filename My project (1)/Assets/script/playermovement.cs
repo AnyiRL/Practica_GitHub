@@ -6,7 +6,8 @@ public class playermovement : MonoBehaviour
 {   public float speed;
     public KeyCode upkey;
     private Vector2 dir;
-    private Vector2 velocity;
+    private float velocity;
+    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class playermovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        velocity =  speed * dir;
+        rb.velocity =  speed * dir;
     }
 
 
