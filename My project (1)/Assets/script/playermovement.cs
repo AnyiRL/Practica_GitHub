@@ -5,8 +5,8 @@ using UnityEngine;
 public class playermovement : MonoBehaviour
 {   public float speed;
     public KeyCode upkey;
-    public Vector2 dir;
-    public Vector2 velocity;
+    private Vector2 dir;
+    private Vector2 velocity;
     // Start is called before the first frame update
     void Start()
     {
